@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+.cgpa{
+    font-size:50px !important;
+}
+.cgpa span{
+    font-size:14px !important
+}
+label{
+    margin-top:5px;
+    color:white;
+    font-weight:bold;
+}
+.d-flex{
+border-radius:10px;
+}
+.dev-details a{
+ font-weight:bold;
+ font-family:cursive;
+}

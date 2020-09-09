@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CgpaGeneratorComponent } from './cgpa-generator/cgpa-generator.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CgpaGeneratorComponent
   ],
   imports: [
     BrowserModule,

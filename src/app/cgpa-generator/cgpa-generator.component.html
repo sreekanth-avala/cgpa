@@ -1,0 +1,91 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 text-center">
+            <div class="card card-body">
+                <div class="card-text">
+                     <!-- 1st semister -->
+                    <div class="d-flex justify-content-around bg-primary py-2 ">
+                        <label for="sem1">I<sup>st</sup> sem</label>
+                        <select class="selectpicker w-50" data-live-search="true"
+                            (change)="onPointChange($event.target.value, 'sem1')">
+                            <option selected disabled>Choose...</option>
+                            <option [value]="point" *ngFor="let point of pointList">
+                                {{ point }}
+                            </option>
+                        </select>
+                    </div>
+                     <!-- 1st semister -->
+                    <div class="d-flex justify-content-around bg-primary py-2  mt-4">
+                        <label for="sem1">II<sup>nd</sup> sem</label>
+                        <select class="selectpicker w-50" data-live-search="true"
+                            (change)="onPointChange($event.target.value, 'sem2')">
+                            <option selected disabled>Choose...</option>
+                            <option [value]="point" *ngFor="let point of pointList">
+                                {{ point }}
+                            </option>
+                        </select>
+                    </div>
+                     <!-- 1st semister -->
+                    <div class="d-flex justify-content-around bg-primary py-2  mt-4">
+                        <label for="sem1">III<sup>rd</sup> sem</label>
+                        <select class="selectpicker w-50" data-live-search="true"
+                            (change)="onPointChange($event.target.value, 'sem3')">
+                            <option selected disabled>Choose...</option>
+                            <option [value]="point" *ngFor="let point of pointList">
+                                {{ point }}
+                            </option>
+                        </select>
+                    </div>
+                     <!-- 1st semister -->
+                    <div class="d-flex justify-content-around bg-primary py-2  mt-4">
+                        <label for="sem1">IV<sup>th</sup> sem</label>
+                        <select class="selectpicker w-50" data-live-search="true"
+                            (change)="onPointChange($event.target.value, 'sem4')">
+                            <option selected disabled>Choose...</option>
+                            <option [value]="point" *ngFor="let point of pointList">
+                                {{ point }}
+                            </option>
+                        </select>
+                    </div>
+                     <!-- 1st semister -->
+                    <div class="d-flex justify-content-around bg-primary py-2  mt-4">
+                        <label for="sem1">V<sup>th</sup> sem</label>
+                        <select class="selectpicker w-50" data-live-search="true"
+                            (change)="onPointChange($event.target.value, 'sem5')">
+                            <option selected disabled>Choose...</option>
+                            <option [value]="point" *ngFor="let point of pointList">
+                                {{ point }}
+                            </option>
+                        </select>
+                    </div>
+                     <!-- 1st semister -->
+                    <div class="d-flex justify-content-around bg-primary py-2  mt-4">
+                        <label for="sem1">VI<sup>th</sup> sem</label>
+                        <select class="selectpicker w-50" data-live-search="true"
+                            (change)="onPointChange($event.target.value, 'sem6')">
+                            <option selected disabled>Choose...</option>
+                            <option [value]="point" *ngFor="let point of pointList">
+                                {{ point }}
+                            </option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-warning btn-block mt-5" [disabled]="!validateInputs()" (click)="onSubmit()">
+                        GET CGPA
+                    </button>
+                </div>
+                <!--card-text-->
+            </div>
+            <!--card-->
+        </div>
+        <!--col-->
+    </div>
+    <!--row-->
+</div>
+<!--container-->
+
+<div class="container mt-4 text-right dev-details">
+    <p>
+        Designed By <a href="http://instagram.com/vikas_vikki08/">VIKAS</a>
+    </p>
+</div>
